@@ -1,0 +1,18 @@
+<div class="main-container">
+  <header class="header">
+    <h3 style="color:white ; padding-left: 20px;">Information Retrieval Project</h3>
+  </header>
+  <div class="content-container">
+    <clr-vertical-nav [clrVerticalNavCollapsible]="true">
+      <a clrVerticalNavLink routerLink="./ranks" routerLinkActive="active">Ranks Page</a>
+      <a clrVerticalNavLink routerLink="./images-grid" routerLinkActive="active">Content-Analysis</a>
+      <a clrVerticalNavLink routerLink="./topic-modelling" routerLinkActive="active">Topic Modelling</a>
+    </clr-vertical-nav>
+    <div class="content-area">
+      <router-outlet></router-outlet>
+      
+    </div>
+  </div>
+
+
+</div>

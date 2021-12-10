@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="alert" role="alert">
+      <div class="alert-items">
+        <div class="alert-item static">
+          <span class="alert-text">
+            Enter the Search Query for which you want to search for top 20 documents.
+          </span>
+        </div>
+      </div>
+    </div>
+  <div class="col-sm-6">
+  <form clrForm>
+    <clr-input-container>
+      <label>Enter Search Query</label>
+      <input clrInput placeholder="Enter your Search Query!" name="searchField" [(ngModel)]="searchField" />
+    </clr-input-container>
+  </form>
+  </div>
+  <div class="col-sm-4">
+  <button class="btn btn-primary" (click)="onClickButton()">Search </button>
+  </div>
+</div>
+<!-- <clr-spinner [clrMedium]="true"></clr-spinner> -->
+<div class="tweets">
+  <div *ngFor="let tweet of tweetsFinal; let i = index">
+    <div class="clr-row">
+      <div class="clr-col-lg-12 clr-col-12">
+        <div class="card">
+          <div class="card-header" style="margin: auto;">
+            Tweet #{{i+1}}
+          </div>
+          <div class="card-block">
+            <div class="card-text">
+              {{tweet.tweet_text}}
+            </div>
+          </div>
+          <div class="card-block">
+            <div class="card-text">
+              <span ng-show="tweet.country"><span class="label label-blue">country: {{tweet.country}}</span></span>
+            </div>
+          </div>
+          <div class="card-block">
+            <div class="card-text">
+              <span ng-show="tweet.hashtags"><span class="label label-blue">hashtags: {{tweet.hashtags}}</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

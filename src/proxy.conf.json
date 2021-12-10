@@ -1,0 +1,7 @@
+{
+    "/": {
+      "target": "3.86.182.43:4000/search_api",
+      "secure": false
+    }
+  }
+  
