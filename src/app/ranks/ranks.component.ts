@@ -42,7 +42,7 @@ export class RanksComponent implements OnInit {
     var formData = new FormData()
     formData.append("query", this.searchField);
     this.clearTweets();
-    this.http.post<any>(this.searchUrlLocal, formData)
+    this.http.post<any>(this.searchUrl2, formData)
     .subscribe(response=>{
       let data = <Tweet[]>response.results;
       data.map(tweet => this.addTweet(tweet))
