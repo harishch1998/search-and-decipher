@@ -10,13 +10,15 @@ import { RanksComponent } from './ranks/ranks.component';
 import { FormsModule } from '@angular/forms';
 import { TopicModellingComponent } from './topic-modelling/topic-modelling.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TopicModellingSpanishComponent } from './topic-modelling-spanish/topic-modelling-spanish.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImagesGridComponent,
     RanksComponent,
-    TopicModellingComponent
+    TopicModellingComponent,
+    TopicModellingSpanishComponent
   ],
   imports: [
     BrowserModule,
