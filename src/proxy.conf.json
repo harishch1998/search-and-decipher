@@ -1,7 +1,9 @@
 {
-    "/": {
-      "target": "3.86.182.43:4000/search_api",
-      "secure": false
-    }
+  "/api/*": {
+      "target": "http://3.86.182.43:4000",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+  }
 }
   

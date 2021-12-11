@@ -1,15 +1,16 @@
 <div class="main-container">
   <header class="header">
-    <h3 style="color:white ; padding-left: 20px;">Information Retrieval Project</h3>
+    <h3 style="color:white ; padding-left: 20px;">Search and Decipher</h3>
   </header>
   <div class="content-container">
     <clr-vertical-nav [clrVerticalNavCollapsible]="true">
-      <a clrVerticalNavLink routerLink="./ranks" routerLinkActive="active">Ranks Page</a>
-      <a clrVerticalNavLink routerLink="./topic-cluster" routerLinkActive="active">3D Topic Cluster</a>
-      <a clrVerticalNavLink routerLink="./images-grid" routerLinkActive="active">Content-Analysis</a>
-      <a clrVerticalNavLink routerLink="./topic-modelling" routerLinkActive="active">Topic Modelling</a>
-      <a clrVerticalNavLink routerLink="./topic-modelling-intertopic" routerLinkActive="active">Topic Modelling Intertopic</a>
+      <a clrVerticalNavLink routerLink="./ranks" routerLinkActive="active">Search and Retrieval</a>
+      <a clrVerticalNavLink routerLink="./topic-cluster" routerLinkActive="active">Sentiment Clustering</a>
+      <a clrVerticalNavLink routerLink="./images-grid" routerLinkActive="active">Content Analytics</a>
+      <a clrVerticalNavLink routerLink="./topic-modelling" routerLinkActive="active">Topic Modelling (Discovery)</a>
+      <a clrVerticalNavLink routerLink="./topic-modelling-intertopic" routerLinkActive="active">Intertopic Models</a>
       <a clrVerticalNavLink routerLink="./topic-charts" routerLinkActive="active">Topic Charts</a>
+      <a clrVerticalNavLink routerLink="./about" routerLinkActive="active">About</a>
     </clr-vertical-nav>
     <div class="content-area">
       <router-outlet></router-outlet>

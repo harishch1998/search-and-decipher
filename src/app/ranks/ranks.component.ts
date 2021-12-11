@@ -30,16 +30,13 @@ export class RanksComponent implements OnInit {
   }
   searchField = '';
   input: string = ""
-  searchUrlLocal = 'http://localhost:4000/search_api'
-  searchUrl = '3.86.182.43:4000/search_api';
-  searchUrl2 = 'ec2-3-86-182-43.compute-1.amazonaws.com:4000/search_api';
   
   onClickButton(){
     //call api with search input and get result and display as a list of cards
     var formData = new FormData()
     formData.append("query", this.searchField);
     this.clearTweets();
-    this.http.post<any>(this.searchUrl2, formData)
+    this.http.post<any>("/api/search_api", formData)
     .subscribe(response=>{
       let data = <Tweet[]>response.results;
       data.map(tweet => this.addTweet(tweet))

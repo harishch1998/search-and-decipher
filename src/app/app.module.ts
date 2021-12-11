@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TopicModellingSpanishComponent } from './topic-modelling-spanish/topic-modelling-spanish.component';
 import { TopicChartsComponent } from './topic-charts/topic-charts.component';
 import { TopicClusterComponent } from './topic-cluster/topic-cluster.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TopicClusterComponent } from './topic-cluster/topic-cluster.component';
     TopicModellingComponent,
     TopicModellingSpanishComponent,
     TopicChartsComponent,
-    TopicClusterComponent
+    TopicClusterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

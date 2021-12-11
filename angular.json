@@ -71,6 +71,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "src/proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "browserTarget": "angular-tour-of-heroes:build:production"
@@ -95,7 +98,6 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "proxyConfig": "src/proxy.conf.json",
             "assets": [
               "src/favicon.ico",
               "src/assets"
