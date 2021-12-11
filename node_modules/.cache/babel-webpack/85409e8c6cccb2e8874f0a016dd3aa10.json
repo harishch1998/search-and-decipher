@@ -1,0 +1,1 @@
+{"ast":null,"code":"function n(n, t) {\n  const o = n.find(n => !!n[0]);\n  return o ? o[1]() : t();\n}\n\nexport { n as returnOrFallthrough }; //# sourceMappingURL=conditional.js.map","map":null,"metadata":{},"sourceType":"module"}

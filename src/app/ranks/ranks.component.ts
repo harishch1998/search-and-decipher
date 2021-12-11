@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {map} from 'rxjs/operators';
-import { HEROES } from '../mock-heroes';
 import { TWEETS } from '../mock-tweets';
 import { Tweet } from '../tweet';
 
@@ -17,8 +16,6 @@ export class RanksComponent implements OnInit {
   constructor(private http: HttpClient) {
 
   }
-  hero = 'Windstorm';
-  heroes = HEROES;
   tweets = TWEETS;
 
   ngOnInit(): void {

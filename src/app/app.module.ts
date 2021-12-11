@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { TopicModellingComponent } from './topic-modelling/topic-modelling.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TopicModellingSpanishComponent } from './topic-modelling-spanish/topic-modelling-spanish.component';
+import { TopicChartsComponent } from './topic-charts/topic-charts.component';
+import { TopicClusterComponent } from './topic-cluster/topic-cluster.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TopicModellingSpanishComponent } from './topic-modelling-spanish/topic-
     ImagesGridComponent,
     RanksComponent,
     TopicModellingComponent,
-    TopicModellingSpanishComponent
+    TopicModellingSpanishComponent,
+    TopicChartsComponent,
+    TopicClusterComponent
   ],
   imports: [
     BrowserModule,

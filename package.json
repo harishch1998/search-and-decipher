@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "aws-deploy": "aws s3 sync dist/angular-tour-of-heroes/ s3://my-search-and-decipher-angular-app"
   },
   "private": true,
   "dependencies": {

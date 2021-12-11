@@ -4,13 +4,16 @@ import { ImagesGridComponent } from './images-grid/images-grid.component';
 import { RanksComponent } from './ranks/ranks.component';
 import { TopicModellingComponent } from './topic-modelling/topic-modelling.component';
 import { TopicModellingSpanishComponent } from './topic-modelling-spanish/topic-modelling-spanish.component';
+import { TopicChartsComponent } from './topic-charts/topic-charts.component';
+import { TopicClusterComponent } from './topic-cluster/topic-cluster.component';
 
 const routes: Routes = [
   { path: 'images-grid', component: ImagesGridComponent },
   { path: 'ranks', component: RanksComponent },
   { path: 'topic-modelling', component: TopicModellingComponent },
-  { path: 'topic-modelling-spanish', component: TopicModellingSpanishComponent }
-
+  { path: 'topic-modelling-intertopic', component: TopicModellingSpanishComponent },
+  { path: 'topic-charts', component: TopicChartsComponent },
+  { path: 'topic-cluster', component: TopicClusterComponent }
 ];
 
 @NgModule({
